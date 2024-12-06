@@ -1,0 +1,305 @@
+:root {
+  --primary-color: #1976D2;
+  --primary-light: #63a4ff;
+  --primary-dark: #004ba0;
+  --secondary-color: #FF4081;
+  --text-color: #212121;
+  --text-color-light: #757575;
+  --background-color: #F5F5F5;
+  --surface-color: #FFFFFF;
+  --error-color: #B00020;
+  --success-color: #388E3C;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  display: flex;
+  height: 100vh;
+}
+
+.app-bar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-bar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  background-color: var(--primary-light);
+  width: 240px;
+  padding: 20px;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.content {
+  margin-left: 240px;
+  padding-top: 80px;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.table th {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.table td a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.table td a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.success {
+  color: var(--success-color);
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+/* Agregar animación de transición para cambiar de contenido */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .app-bar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      margin-bottom: 20px;
+  }
+
+  .content {
+      margin-left: 0;
+      padding: 20px;
+  }
+
+  .card {
+      padding: 15px;
+  }
+
+  .input-group input {
+      font-size: 0.9rem;
+  }
+
+  .table {
+      font-size: 0.9rem;
+  }
+
+  .table td a {
+      padding: 4px 8px;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+  }
+}
+
+
+
+:root {
+  --primary-color: #1976D2;
+  --primary-light: #63a4ff;
+  --primary-dark: #004ba0;
+  --secondary-color: #FF4081;
+  --text-color: #212121;
+  --text-color-light: #757575;
+  --background-color: #F5F5F5;
+  --surface-color: #FFFFFF;
+  --error-color: #B00020;
+  --success-color: #388E3C;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.app-bar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-bar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-light);
+}
+
+/* Añadir efecto de desplazamiento */
+.content {
+  padding-top: 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
