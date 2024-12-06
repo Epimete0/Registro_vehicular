@@ -1,5 +1,5 @@
 ¡Bienvenido al Sistema de Gestión de Vehículos!
-¡Hola! Este es un proyecto que te permitirá gestionar y controlar todos los aspectos relacionados con tus vehículos de manera eficiente y sencilla. Ya sea que seas un usuario con un vehículo o un administrador, nuestra plataforma te proporciona las herramientas necesarias para tener todo bajo control.
+¡Hola! Este es un proyecto que te permitirá gestionar y controlar todos los aspectos relacionados con tus vehículos de manera  sencilla. Ya sea que seas un usuario con un vehículo o un administrador, nuestra plataforma te proporciona las herramientas necesarias para tener todo bajo control.
 
 🚗 ¿Qué puedes hacer con este sistema?
 Como usuario:
@@ -22,7 +22,7 @@ git clone https://github.com/tu-usuario/gestion-vehiculos.git
 
 2. Levantar el servidor con XAMPP
 Descarga e instala XAMPP si aún no lo tienes instalado.
-Abre XAMPP y en el panel de control, inicia Apache y MySQL (aunque no se necesite MySQL para este proyecto, es recomendable iniciar ambos).
+Abre XAMPP y en el panel de control, inicia Apache
 Coloca los archivos del proyecto en la carpeta htdocs de tu instalación de XAMPP (por defecto suele estar en C:\xampp\htdocs).
 3. Crear la base de datos SQLite
 Dentro de la carpeta del proyecto, verás un archivo llamado inicioDB.php. Este archivo contiene el código necesario para generar la base de datos SQLite (mibase.db).
